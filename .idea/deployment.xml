@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" deleteMissingItems="true" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="volitia (95c6c3c1-d15f-474a-ba2e-5b5f0b725d9c)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/volitia" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-volitia" />
+            <excludedPath local="true" path="$PROJECT_DIR$/goodies" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
