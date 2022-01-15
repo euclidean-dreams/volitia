@@ -6,7 +6,7 @@
 
 namespace volitia {
 
-class HomunculusWrangler : public impresarioUtils::Circulable {
+class HomunculusWrangler : public impresarioUtils::TickingCirculable {
 private:
     std::unique_ptr<std::vector<std::unique_ptr<Pollable>>> homunculusBonds;
     int tickInterval;

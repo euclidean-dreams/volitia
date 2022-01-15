@@ -5,7 +5,7 @@
 
 namespace volitia {
 
-class ParcelMaster : public impresarioUtils::Circulable {
+class ParcelMaster : public impresarioUtils::TickingCirculable {
 private:
     std::unique_ptr<impresarioUtils::NetworkSocket> socket;
     std::shared_ptr<impresarioUtils::Arbiter<std::vector<float>>> axiomArbiter;

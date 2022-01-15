@@ -28,7 +28,7 @@ int bootstrap() {
     homunculusBonds->push_back(std::make_unique<GeminiBond>(phenomenaArbiter));
 
     auto homunculusWrangler = std::make_unique<HomunculusWrangler>(move(homunculusBonds));
-    auto homunculusWranglerThread = impresarioUtils::Circlet::begin(move(homunculusWrangler));
+    auto homunculusWranglerThread = impresarioUtils::Circlet::beginTicking(move(homunculusWrangler));
 
     // parcel master
     auto socket = std::make_unique<impresarioUtils::NetworkSocket>(
@@ -38,7 +38,7 @@ int bootstrap() {
             true
     );
     auto parcelMaster = std::make_unique<ParcelMaster>(move(socket), move(axiomArbiter), move(phenomenaArbiter));
-    auto parcelMasterThread = impresarioUtils::Circlet::begin(move(parcelMaster));
+    auto parcelMasterThread = impresarioUtils::Circlet::beginTicking(move(parcelMaster));
 
     // loop
     homunculusWranglerThread->join();
